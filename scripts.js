@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (currencySelect.value == "dolar") {
             currencyName.innerHTML = "Dólar americano"
-            currencyImage.src = "./assets/dolar.png"
+            currencyImage.src = "./assets/dolarimg.png"
         }
         if (currencySelect.value == "euro") {
             currencyName.innerHTML = "Euro"
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (currencySelectConvert.value == "dolar") {
             currencyNameConvert.innerHTML = "Dólar americano"
-            currencyImageConvert.src = "./assets/dolar.png"
+            currencyImageConvert.src = "./assets/dolarimg.png"
         }
         if (currencySelectConvert.value == "euro") {
             currencyNameConvert.innerHTML = "Euro"
