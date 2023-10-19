@@ -6,17 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const currencyName = document.getElementById("currency-name");
     const currencyImage = document.querySelector(".currency-img");
     const currencyNameConvert = document.getElementById("currency-name-convert");
-    const currencyImageConvert = document.querySelector(".currency-img-convert");
-
-
+    const currencyImageConvert = document.querySelector(".currency-img-convert");    
+    
     const convertValues = async () => {
         const inputCurrencyValue = document.querySelector(".input-currency").value
 
         const currencyValueToConvert = document.querySelector(".currency-value-to-convert") // valor a converter
 
         const currencyValueConverted = document.querySelector(".currency-value") // outras moedas
-
-      
 
         const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(Response => Response.json())
 
@@ -143,9 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         convertValues()
     });
-
-    convertButton.addEventListener("click", convertValues)
-
-
+    
+   convertButton.addEventListener("click", convertValues)
 });
 
